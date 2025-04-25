@@ -1,7 +1,8 @@
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, ContextTypes
 
-TOKEN = '8142653184:AAF5FqVCVR6c1vKaPgZaQ2e2eCoZ-4yVIEs'
+import os
+TOKEN = os.getenv("8142653184:AAF5FqVCVR6c1vKaPgZaQ2e2eCoZ-4yVIEs")
 
 # Упражнения по уровню
 exercises = [
